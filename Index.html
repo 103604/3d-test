@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body>
+
+<a-scene>
+    <a-sky color="white" rotation="0 -130 0"></a-sky>
+    <a-text value="Hello World!" position="0 1.5 -5"
+            color="black"></a-text>
+
+    <a-box id="mijnkubus" position="-2 1 -4" color="red" interactief-object></a-box>
+    <a-bol id="mijnbol" position="2 1 -5" color="red" interactief-object></a-bol>
+
+    <a-entity camera look-controls>
+        <a-entity cursor="rayOrigin: mouse;" position="0 0 -1"
+                  geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                  material="color: grey; shader: flat">
+        </a-entity>
+    </a-entity>
+    
+</a-scene>
+</body>
+</html>
